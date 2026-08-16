@@ -1,0 +1,28 @@
+# 论文作者 / Authors
+# 每条对应一位作者，key（冒号前的小写英文）是 publications.yml 里 authors 列表引用的名字。
+#   first_name / last_name  显示名
+#   website                 个人主页（可选，有就填，显示为超链接）
+#   is_me: true             对应你自己的条目，主页会加粗高亮
+#
+# 示例：
+#   you:
+#     first_name: your
+#     last_name: name
+#     website: https://your-site
+#     is_me: true
+#   coauthor:
+#     first_name: co
+#     last_name: author
+
+# 把这里替换成你自己
+you:
+  first_name: Jiangzhe
+  last_name: Huang
+  # website: https://splashthelight.github.io
+  is_me: true
+
+# 需要时再往下加合著者，例如：
+# coauthor:
+#   first_name: Co
+#   last_name: Author
+#   website: https://coauthor.org

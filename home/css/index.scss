@@ -1,0 +1,162 @@
+---
+---
+
+@import "base";
+
+/* ===== 背景：清晰九寨沟山水（无磨砂，与预览版一致） ===== */
+body {
+    background-color: #eef1f6;
+    background-image: url('../images/bg-jiuzhaigou.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* 背景遮罩：只压暗一点衬托白字，不模糊，山水保持清晰 */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.15);   /* 与预览版「亮」一致 */
+}
+
+/* 让正文内容处于遮罩层之上 */
+.hero,
+.section,
+.footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* footer：去掉 Bulma 默认的 #fafafa 白底，改为透明让山水透出，并修正过大的 padding */
+.footer {
+    background-color: transparent;
+    padding: 2rem 1.5rem 3rem;
+}
+
+/* 半透明内容卡片（清晰山水 + 半透明白底保证文字可读，无模糊，与预览版一致） */
+.hero .container,
+.section .container.is-max-desktop,
+.footer .container {
+    background: rgba(255, 255, 255, 0.62);   /* 与预览版「亮」一致 */
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.14);
+}
+/* hero-body 自带内边距，给卡片补一点呼吸空间 */
+.hero .container { padding: 40px 36px; }
+.section .container.is-max-desktop { padding: 24px 32px; }
+.footer .container { padding: 24px 32px; }
+
+.title {
+    font-family: 'Google Sans';
+    font-weight: 700;
+}
+
+.portrait {
+    border-radius: 2%;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
+        display: block;
+    }
+}
+
+.footer .footer-links a {
+    font-size: 25px;
+    color: #000;
+}
+
+.publication-block {
+    .publication-title {
+        width: fit-content;
+        margin: 0 !important;
+        font-weight: 600;
+        font-size: 110% !important;
+
+        a { color: #000 }
+    }
+
+    .publication-venue {
+        color: #555;
+        width: fit-content;
+        margin-top: 0;
+    }
+
+    .publication-venue-emph {
+        font-style: normal;
+        font-size: 80%;
+        font-weight: 500;
+        color: firebrick;
+        padding-left: 0.25em;
+    }
+
+    .publication-awards {
+        color: firebrick;
+        width: fit-content;
+        font-weight: bolder;
+    }
+
+    .publication-authors {
+        .author-me {
+            color: #000;
+            font-weight: 600;
+        }
+
+        a {
+            color: #000 !important;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .publication-image {
+        border-radius: 2%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-size: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .publication-mousecell {
+        position: relative;
+        font-size: 0;
+    }
+
+    .publication-mousecell {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
+
+        video {
+            display: none;
+        }
+    }
+
+    .publication-description {
+        color: #333;
+        margin: 0.5em 0;
+    }
+
+    .publication-links {
+        margin: 0 !important;
+        margin-top: 0.5em !important;
+    }
+}

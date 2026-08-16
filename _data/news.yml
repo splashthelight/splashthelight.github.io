@@ -1,0 +1,7 @@
+# 动态消息 / News
+# 每一条前面加一个 "- date: 日期"，下面一行写描述（支持 Markdown 链接）。
+# 示例：
+# - date: Oct 2025
+#   description: >-
+#     [Paper Name](https://arxiv.org/abs/xxxx) has been accepted to NeurIPS 2026.
+# 清空后主页会显示“暂无”。等你有了消息再往里加。

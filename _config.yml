@@ -1,0 +1,31 @@
+# =====================================================
+#  你的个人主页配置文件（Jekyll）
+#  已经帮你填好基本信息。以后只改名字/简介/邮箱即可。
+#  注意：每个 key 后面只写值本身，行尾不要写注释，避免 YAML 解析失败。
+# =====================================================
+
+title: Jiangzhe Huang        # 浏览器标签页标题
+name: Jiangzhe Huang         # 主页顶部名字
+position: M.S. Student       # 职位/身份
+email: 1912285210@qq.com
+description: >-
+  I am an M.S. student at [Beihang University](https://www.buaa.edu.cn/),
+  and I received my B.Eng. from [Southwest Jiaotong University](https://www.swjtu.edu.cn/).
+
+  My current research focuses on **LLM4SE** (large language models for
+  software engineering), and I am broadly interested in **LLM-based agents**
+  and **reasoning / inference infrastructure**.
+baseurl: ""
+url: "https://splashthelight.github.io"
+twitter_username: ""
+github_username: splashthelight
+google_scholar: ""           # 有 Google Scholar 账号时把 ID 填进来
+google_analytics: ""
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+sass:
+  style: compact

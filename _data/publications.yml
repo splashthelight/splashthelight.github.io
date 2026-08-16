@@ -1,0 +1,27 @@
+# 发表论文 / Publications
+# 主页会按此文件条目标识的 id 渲染论文卡片。
+#
+# 字段说明：
+#   id           唯一标识，随你喜欢（用英文短横线分隔，如 my-paper-net）
+#   title        论文标题（加引号）
+#   venue        发表期刊/会议 + 年份
+#   link         正式发表的 DOI 或 PDF 页面链接
+#   project_page  项目主页地址（可选，没有就删掉这行）
+#   github       代码仓库，格式 用户名/仓库名（可选）
+#   arxiv        arXiv 编号（可选，会自动生成 PDF 和 arXiv 链接）
+#   image        主页缩略图文件名，放在 home/images/ 目录下
+#   authors      作者列表：引用 _data/authors.yml 里定义的键名
+#
+# 复制下面这一段改即可；不需要的论文条目直接删掉。
+#
+# - id: my-paper-net
+#   title: "My Paper Title"
+#   venue: Conference on Very Good Things (CVGT), 2026
+#   link: https://doi.org/xxx
+#   project_page: "https://你的用户名.github.io/my-paper-net/"
+#   github: 你的用户名/my-paper-net
+#   arxiv: 26xx.xxxxx
+#   image: my-paper-net.jpg
+#   authors:
+#     - you
+#     - coauthor
